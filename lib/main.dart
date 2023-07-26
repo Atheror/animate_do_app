@@ -1,5 +1,6 @@
-import 'package:animate_do_app/presentation/screens/main_screen.dart';
 import 'package:flutter/material.dart';
+
+import 'presentation/screens/screens.dart';
 
 void main() => runApp(const MyApp());
 
@@ -11,7 +12,7 @@ class MyApp extends StatelessWidget {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Animate_do',
-      home: MainScreen(),
+      home: NavigationScreen(),
     );
   }
 }

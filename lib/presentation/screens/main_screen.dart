@@ -1,4 +1,5 @@
 import 'package:animate_do/animate_do.dart';
+import 'package:animate_do_app/presentation/screens/screens.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
@@ -16,7 +17,9 @@ class MainScreen extends StatelessWidget {
         actions: [
           IconButton(
             icon: const Icon(FontAwesomeIcons.twitter),
-            onPressed: () {},
+            onPressed: () {
+              Navigator.push(context, MaterialPageRoute(builder: (_) => const TwitterScreen()));
+            },
           ),
           SlideInLeft(
             from: 50,
