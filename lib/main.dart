@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Animate_do',
-      home: NavigationScreen(),
+      home: MainScreen(),
     );
   }
 }

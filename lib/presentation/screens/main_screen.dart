@@ -35,7 +35,9 @@ class MainScreen extends StatelessWidget {
       floatingActionButton: ElasticInRight(
         child: FloatingActionButton(
           child: const FaIcon(FontAwesomeIcons.play),
-          onPressed: () {},
+          onPressed: () {
+            Navigator.push(context, MaterialPageRoute(builder: (_) => const NavigationScreen()));
+          },
         ),
       ),
       body: Center(
